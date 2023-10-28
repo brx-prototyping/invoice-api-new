@@ -20,7 +20,7 @@ mongoose.connect(mongoURI, {
 const invoiceRoutes = require("./routes/invoiceRoutes");
 
 // Use routes
-app.use("/invoices", invoiceRoutes);
+app.use(invoiceRoutes);
 
 // Start the server
 app.listen(port, () => {
